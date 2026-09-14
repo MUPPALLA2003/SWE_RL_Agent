@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "SWE-RL"
+version = "1.0.0"
+description = "A from-scratch GRPO RL training loop that fine-tunes an LLM with LoRA on SWE-bench tasks"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+authors = [
+    { name = "Muppalla Komal", email = "muppallakomaliitkgp2022@gmail.com" }
+]
+
+dependencies = [
+    "torch>=2.1",
+    "numpy>=1.23",
+    "einops>=0.7",
+    "pyyaml>=6.0",
+    "tqdm>=4.66",
+    "datasets==2.16.1",
+    "transformers==4.38.2",
+    "wandb>=0.22.3",
+    "peft==0.12.0",
+    "accelerate==0.33.0"
+]
